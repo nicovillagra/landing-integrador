@@ -1,0 +1,126 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:font1;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    --white:#ffffff;
+    --black:#000000;
+    --greytransparent:#cccccc80;
+    --orange:#F57C00;
+}
+@font-face {
+    font-family:font1;
+    src: url(./Asap-Italic-VariableFont_wght.ttf);
+}
+body {
+    background-color: var(--white);
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+.header-container{
+    width:100%;
+    height: 100px;
+    background-color:var(--greytransparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position:sticky;
+    top: 0%;
+    z-index: 9999;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+li a {
+    text-decoration: none;
+    box-shadow: none;
+    color:black;
+}
+
+.logo {
+    width: 8rem;
+    height: 8rem;
+}
+.navbar-list li {
+    font-size: 20px;
+    color: var(--black);
+    position: sticky;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+.navbar-list li i {
+    font-size: 20px;
+}
+label, #toggle-menu{
+    font-size: 40px;
+    color: black;
+    display:none;
+}
+#search{
+    border-color:var(--black);
+    height: 22px;
+    border-radius: 4px;
+    
+}
+.hero-container{
+    background: url(./img/tienda2.jpg) no-repeat center/cover;
+    height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1, span{
+    color: var(--white);
+    text-align: center;
+    font-size:80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 180px;
+    transition: all 0.5s;
+}
+h1:hover{
+    background: #ff0000;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 90px ;
+}
+@media (max-width: 550.98px){
+    .navbar-list{
+        position: fixed;
+        display:flex;
+        background-color: rgba(10, 10, 10, 0.733);
+        left: 100%;
+        margin-top: 306px;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        width: 100%;
+        color: white;
+    }
+    li a {
+        color: white;
+    }
+    .checkbutton{
+        display: block;
+    }
+    #toggle-menu:checked ~ ul{
+        left: 0%;
+}
