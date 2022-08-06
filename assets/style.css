@@ -16,6 +16,10 @@
     font-family:font1;
     src: url(./Asap-Italic-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family:font2;
+    src: url(./coolvetica\ rg\ it.otf);
+}
 body {
     background-color: var(--white);
 }
@@ -84,13 +88,14 @@ label, #toggle-menu{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 180px;
 }
 h1, span{
     color: var(--white);
     text-align: center;
     font-size:80px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 180px;
     transition: all 0.5s;
 }
 h1:hover{
@@ -101,6 +106,78 @@ h1:hover{
     background-clip: text;
     color: transparent;
     font-size: 90px ;
+}
+.hero-button{
+    background-color:rgba(255, 255, 255, 0);
+    color: var(--white);
+    border-radius: 10px;
+    border-color: var(--white);
+    width: 7rem;
+    height: 3rem;
+    font-size: 20px;
+    transition: all 0.5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+.hero-button:hover{
+    font-size:25px;
+    width: 8rem;
+    height: 4rem;
+
+}
+.card-container-look{
+    width: 95%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.look-container, .look-container-arrows{
+    display: flex;
+    color: black;
+    align-items: center;
+}
+.look-next{
+    color: black;
+    font-size: 30px;
+    font-family:font2;
+}
+.look-container-arrows , h2{
+    color: black;
+    font-size: 30px;
+}
+.look-container{
+    justify-content: space-between;
+    margin-left: 129px;
+    margin-top: 10px;
+}
+.card-container{
+    display: flex;
+    gap: 50px;
+    margin:46px 0px 0px 50px;
+    justify-content: space-around;
+}
+.model-card-man{
+    width:400px;
+    height:500px;
+    background: url(./img/hamilton.jpg) no-repeat center/cover;
+    padding: 10px;
+}
+.model-card-women{
+    width:400px;
+    height:500px;
+    background: url(./img/modelo2.jpg) no-repeat center/cover;
+    padding: 10px;
+}
+.section-text{
+    font-family:font2;
+    font-size: 37px;
+    color: black;
+    cursor: pointer;
+}
+.section-container{
+    display: flex;
+    justify-content: space-around;
 }
 @media (max-width: 550.98px){
     .navbar-list{
