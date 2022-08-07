@@ -2,7 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family:font1;
+    font-family:font3;
     text-decoration: none;
     list-style: none;
 }
@@ -19,6 +19,10 @@
 @font-face {
     font-family:font2;
     src: url(./coolvetica\ rg\ it.otf);
+}
+@font-face {
+    font-family:font3;
+    src: url(./LEMONMILK-RegularItalic.otf);
 }
 body {
     background-color: var(--white);
@@ -128,7 +132,7 @@ h1:hover{
 }
 .card-container-look{
     width: 95%;
-    height: 800px;
+    height: 700px;
     display: flex;
     flex-direction: column;
 }
@@ -140,7 +144,7 @@ h1:hover{
 .look-next{
     color: black;
     font-size: 30px;
-    font-family:font2;
+    font-family:font3;
 }
 .look-container-arrows , h2{
     color: black;
@@ -170,7 +174,7 @@ h1:hover{
     padding: 10px;
 }
 .section-text{
-    font-family:font2;
+    font-family:font3;
     font-size: 37px;
     color: black;
     cursor: pointer;
@@ -179,13 +183,40 @@ h1:hover{
     display: flex;
     justify-content: space-around;
 }
+.offer-container{
+    width: 95%;
+    height:800px;
+    display: flex;
+    gap: 30px;
+}
+
+.offer-photo{
+    width:60%;
+    height: 500px;
+    background: url(./img/modelos3.jpg)  no-repeat center/cover;
+}
+.offer-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+.offer-text-container h2{
+    font-family:font3;
+    text-align: justify;
+    font-size: 45px;
+}
+.offer-text-container span{
+    color: var(--black);
+    font-size:26px;
+}
 @media (max-width: 550.98px){
-    .navbar-list{
+     nav .navbar-list{
         position: fixed;
         display:flex;
         background-color: rgba(10, 10, 10, 0.733);
         left: 100%;
-        margin-top: 306px;
+        margin-top:19rem;
         text-align: center;
         transition: all .5s;
         flex-direction: column;
