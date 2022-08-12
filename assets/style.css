@@ -31,7 +31,6 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
 }
-
 .header-container{
     width:100%;
     height: 100px;
@@ -46,7 +45,7 @@ html{
 }
 ul{
     list-style: none;
-    display: flex;
+    display:inline-flex;
     gap: 30px;
     padding: 10px;
 }
@@ -116,18 +115,37 @@ h1:hover{
     color: var(--white);
     border-radius: 10px;
     border-color: var(--white);
-    width: 7rem;
-    height: 3rem;
+    width: 10rem;
+    height: 4rem;
     font-size: 20px;
     transition: all 0.5s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: font3;
     text-decoration: none;
     cursor: pointer;
 }
 .hero-button:hover{
     font-size:25px;
-    width: 8rem;
+    width: 11rem;
+    height: 5rem;
+
+}
+.hero-button2{
+    background-color:rgba(255, 255, 255, 0);
+    color: var(--black);
+    border-radius: 10px;
+    border-color: var(--black);
+    width: 10rem;
     height: 4rem;
+    font-size: 20px;
+    transition: all 0.5s;
+    font-family:font3;
+    text-decoration: none;
+    cursor: pointer;
+}
+.hero-button2:hover{
+    font-size:25px;
+    width: 11rem;
+    height: 5rem;
 
 }
 .card-container-look{
@@ -135,6 +153,7 @@ h1:hover{
     height: 700px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 .look-container, .look-container-arrows{
     display: flex;
@@ -188,6 +207,7 @@ h1:hover{
     height:580px;
     display: flex;
     gap: 30px;
+    margin: 30px;
 }
 
 .offer-photo{
@@ -198,8 +218,8 @@ h1:hover{
 .offer-text-container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
+    align-items: center;
+    gap: 70px;
 }
 .offer-text-container h2{
     font-family:font3;
@@ -220,7 +240,7 @@ h1:hover{
 .card-products{
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-rows: 400px 400px;
     gap:2rem;
     padding: 2rem;
 }
@@ -228,11 +248,24 @@ h1:hover{
     height: 400px;
     width: 400px;
     transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .item:hover{
     height: 420px;
     width: 420px;
 }
+.item-product{
+    color:var(--white);
+    font-size: 50px;
+    transition: all 0.5s;
+    text-shadow: 2px  1px 1px black,
+    1px  2px 1px black,
+   0px  1px 2px black,
+    1px -2px 1px black;
+}
+
 
 .item:nth-child(1){
     grid-column: 1/2;
@@ -261,11 +294,11 @@ h1:hover{
         display:flex;
         background-color: rgba(10, 10, 10, 0.733);
         left: 100%;
-        margin-top:19rem;
+        margin-top:20rem;
         text-align: center;
         transition: all .5s;
         flex-direction: column;
-        width: 100%;
+        width: 45%;
         color: white;
     }
     li a {
