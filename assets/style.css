@@ -24,6 +24,10 @@
     font-family:font3;
     src: url(./LEMONMILK-RegularItalic.otf);
 }
+@font-face {
+    font-family:font4;
+    src: url(./BebasNeue-Regular.ttf);
+}
 body {
     background-color: var(--white);
 }
@@ -170,6 +174,7 @@ h1:hover{
     font-size: 30px;
 }
 .look-container{
+    display: flex;
     justify-content: space-between;
     margin-left: 129px;
     margin-top: 10px;
@@ -230,8 +235,8 @@ h1:hover{
     font-size:26px;
 }
 .card-container-products{
-    width: 95%;
-    height:910px;
+    width: 100%;
+    height:930px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,7 +244,7 @@ h1:hover{
 .card-products{
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 400px 400px;
+    grid-template-rows: 400px;
     gap:2rem;
     padding: 2rem;
 }
@@ -287,6 +292,9 @@ h1:hover{
 .contact-container{
     width:95%;
     height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .card-contact{
     display: flex;
@@ -297,9 +305,45 @@ h1:hover{
     color:var(--black);
     font-size: 20px;
 }
+.contact-container-info{
+    display: flex;
+    gap: 10rem;
+}
+.divisor{
+    background-color: var(--black);
+    border: solid;
+    border-color: black;
+    width: 500px;
+    height: 13px;
+    margin: 75px auto 75px auto;
+    border-radius: 5px;
 
-
-
+}
+.mapa-responsive{
+    display: none;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.footer-list li{
+    font-family:font4;
+}
 @media (max-width: 550.98px){
      nav .navbar-list{
         position: fixed;
@@ -321,4 +365,101 @@ h1:hover{
     }
     #toggle-menu:checked ~ ul{
         left: 0%;
+    }
+    .card-container-look{
+        align-items: center;
+        height: 470px;
+    }
+    .look-container{
+        margin-left: 19px;
+    }
+    .look-container-arrows{
+        display: none;
+    }
+    .card-container{
+        margin: 0px;
+        gap: 10px;
+    }
+    .model-card-man, .model-card-women{
+        width: 190px;
+        height: 360px;
+        padding: 0px;
+    }
+    .section-container, .section-text{
+        font-size: 15px;
+        gap: 25px;
+    }
+    .offer-photo{
+        width: 440px;
+        height: 200px;
+    }
+    .offer-container{
+        width: 95%;
+        height: 230px;
+        gap: 10px;
+        margin: 10px;
+    }
+    .offer-text-container{
+        gap: 10px;
+    }
+    .offer-text-container h2{
+        font-size: 19px;
+    }
+    .offer-text-container span{
+        font-size: 13px;
+    }
+    .offer-text-container button{
+        width: 6rem;
+        height: 3rem;
+        font-size: 12px;
+    }
+    .hero-button2:hover{
+        width: 8rem;
+        height: 4rem;
+        font-size: 15px;
+    }
+    .card-container-products{
+        height:470px;
+    }
+    .card-products{
+        grid-template-columns: 100px 100px 110px;
+        grid-template-rows: 200px;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .item{
+        height: 200px;
+        width: 110px;
+    }
+    .item:hover{
+        height: 210px;
+        width: 130px;
+    }
+    .item-product{
+        font-size: 16px;
+    }
+    .divisor{
+        width: 300px;
+        height: 6px;
+    }
+    .contact-container{
+        gap: 15px;
+    }
+    .contact-container h2{
+        font-size: 18px;
+    }
+    .contact-container-info{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .mapa-responsive{
+        display: block;
+    }
+    .logo2{
+        display: none;
+    }
+    footer{
+        gap: 0px;
+    }
 }
