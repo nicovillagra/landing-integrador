@@ -462,4 +462,7 @@ footer{
     footer{
         gap: 0px;
     }
+    .card-container-products h2{
+        font-size: 20px;
+    }
 }
